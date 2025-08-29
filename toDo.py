@@ -12,6 +12,11 @@ def view_tasks():
     for i, task in enumerate (tasks, start = 1):
         print(f"{i}. {task}")
 # Step 4: Delete a task
+def delete_tasks():
+    num = input("Enter the number of the list item you want to delete:")
+    tasks.pop(num)
+    print(tasks)
+    
 
 
 # Step 5: Mark task complete
